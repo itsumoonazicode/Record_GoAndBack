@@ -1,0 +1,9 @@
+CREATE DATABASE record;
+
+use record;
+
+CREATE TABLE rcTime (
+    id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    goDate TIMESTAMP,
+    backDate TIMESTAMP
+);
