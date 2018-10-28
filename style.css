@@ -1,0 +1,12 @@
+.btn {
+    font-size: 48px;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+#go {
+    background-color: darkorchid;
+}
+#back {
+    background-color: dodgerblue;
+}
