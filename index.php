@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>勤怠管理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./design/style.css">
 </head>
 <body>
     <div>
@@ -13,11 +14,13 @@
         <p id="realTime"></p>
 
         <form action="./post.php" method="post">
-            <button id="go" name="action" value="go">出勤</button>
-            <button id="back" name="action" value="back">退勤</button>
+            <button id="go" class="btn" name="action" value="go">出勤</button>
+            <p>or</p>
+            <button id="back" class="btn" name="action" value="back">退勤</button>
         </form>
         <h2><?php echo !empty($_SESSION["go"]) ? "あなたは" . $_SESSION["go"] . "に出勤しました。" : "" ;?></h2>
         <h2><?php echo !empty($_SESSION["back"]) ? "あなたは" . $_SESSION["back"] . "に退勤しました。" : "" ;?></h2>
+        <p><a href="./list.php">週・月別リストへ</a></p>
         <?php
             $_SESSION = array();
             session_destroy();
