@@ -1,8 +1,11 @@
-.btn {
+.btn__big {
     font-size: 48px;
     border: 0;
     cursor: pointer;
     padding: 10px;
+}
+.btn__small {
+    cursor: pointer;
 }
 #go {
     background-color: darkorchid;
