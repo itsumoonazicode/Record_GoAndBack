@@ -21,6 +21,8 @@
         <h2><?php echo !empty($_SESSION["go"]) ? "あなたは" . $_SESSION["go"] . "に出勤しました。" : "" ;?></h2>
         <h2><?php echo !empty($_SESSION["back"]) ? "あなたは" . $_SESSION["back"] . "に退勤しました。" : "" ;?></h2>
         <p><a href="./list.php">週・月別リストへ</a></p>
+        <p><a href="./update.php">時間修正・削除</a></p>
+
         <?php
             $_SESSION = array();
             session_destroy();
